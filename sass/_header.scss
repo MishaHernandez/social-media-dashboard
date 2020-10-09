@@ -1,0 +1,52 @@
+// light theme
+.title {
+    color: var(--very-dark-blue-text);
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.subtitle {
+    margin-top: 8px;
+    margin-bottom: 1.5rem;
+}
+.subtitle, .dark-mode__title {
+    color: var(--dark-grayish-blue-text);
+    font-size: 14px;
+}
+.dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    margin-bottom: 2.2rem;
+    border-top: 1px solid gray;
+
+    &__title {
+        font-weight: 700;
+    }
+    &__button {
+        display: none;
+    }
+    &__label {
+        display: block;
+        width: 3rem;
+        height: 1.5rem;
+        background-color: var(--toggle);
+        border-radius: 1rem;
+        padding: 3px;
+    }
+    &__label::before {
+        display: block;
+        content: "";
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        left: 1px;
+        transition: left .3s;
+    }
+    &__button:checked + &__label::before {
+        left: 1.4rem;
+    }
+}
+

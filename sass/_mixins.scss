@@ -1,0 +1,10 @@
+%article-border-top {
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 4px 4px 0 0;
+}
+@mixin article-border-color-top ($border-color) {
+    @extend %article-border-top;
+    background: $border-color;
+}
