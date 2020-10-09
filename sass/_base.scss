@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.ttf'), url('../fonts/Inter-Bold.ttf');
+}
+
 body {
     font-size: 14px;
     font-family: 'Inter', sans-serif;
@@ -9,6 +14,10 @@ body {
 
 .container {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2.3rem auto 2rem;
+
+    .subtitle--section {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
 }
