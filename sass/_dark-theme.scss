@@ -1,0 +1,33 @@
+// ====dark theme====
+// body background
+.bg-dark {
+    background-color: var(--very-dark-blue-bg);
+    transition: background-color .3s;
+}
+
+.bg-top-dark {
+    background-color: var(--very-dark--blue-top-bg-pattern);
+    transition: background-color .3s;
+}
+
+// cards
+.card-dark {
+    background-color: var(--dark-desaturated-blue-card-bg);
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: rgba(37, 42, 65, .5);
+    }
+}
+
+// section 1: p1 y p3 / section 2: p1
+.text-dark-1 {
+    color: var(--desaturated-blue-text);
+    transition: color .3s;
+}
+
+// section 2: p2 / section 2: p2
+.text-dark-2 {
+    color: var(--white-text);
+    transition: color .3s;
+}

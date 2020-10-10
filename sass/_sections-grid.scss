@@ -1,0 +1,18 @@
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    &:first-of-type {
+        margin-bottom: 3rem;
+    }
+
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    @media (min-width: 900px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+    }
+}

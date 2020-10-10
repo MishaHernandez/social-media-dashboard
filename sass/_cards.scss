@@ -7,7 +7,15 @@
     background-color: var(--light-grayish-blue-card-bg);
     margin-bottom: 1.5rem;
     border-radius: 6px;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: lightgray;
+    }
 }
+
+// seccion 1
 .card-1 {
     // Borders top
     &:first-child::before {
@@ -25,13 +33,11 @@
     &:last-child::before {
         @include mixins.article-border-color-top($youtube);
     }
-    
-    &:last-child {
-        margin-bottom: 3rem;
-    }
+
     // Content
     &__paragraph {
-        &:first-child {
+
+        &-1 {
             color: var(--dark-grayish-blue-text);
             font-size: 12px;
             font-weight: 700;
@@ -39,6 +45,7 @@
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
+            transition: color .3s;
 
             img {
                 display: inline-block;
@@ -46,23 +53,25 @@
             }
         }
 
-        &:nth-child(2) {
+        &-2 {
             color: var(--very-dark-blue-text);
             font-size: 3.5rem;
             font-weight: 700;
             margin: 0;
+            transition: color .3s;
         }
 
-        &:nth-child(3) {
+        &-3 {
             color: var(--dark-grayish-blue-text);
             margin-top: 0;
             margin-bottom: 1rem;
             letter-spacing: 5px;
             text-transform: uppercase;
             font-size: 12px;
+            transition: color .3s;
         }
 
-        &:last-child {
+        &-4 {
             color: var(--lime-green);
             font-size: 12px;
             font-weight: 700;
@@ -80,26 +89,26 @@
         }
     }
 }
-
+// seccion 2
 .card-2 {
     padding: 1.5rem;
 
-    &__paragraph {
+    &__paragraph-1, &__paragraph-2 {
         width: 100%;
         margin-top: 0;
         display: flex;
         justify-content: space-between;
         font-weight: 700;
 
-        &:first-child {
-            color: var(--dark-grayish-blue-text);
-            margin-bottom: 1.5rem;
-            align-items: center;
-        }
-        &:last-child {
-            margin-bottom: 0;
-            align-items: baseline;
-        }
+    }
+    &__paragraph-1 {
+        color: var(--dark-grayish-blue-text);
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+    &__paragraph-2 {
+        margin-bottom: 0;
+        align-items: baseline;
     }
     &__span {
         &:first-child {
