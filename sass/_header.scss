@@ -57,12 +57,12 @@
             border-radius: 50%;
             background-color: #fff;
             position: relative;
-            left: 1px;
-            transition: left .3s;
+            right: -1.5rem;
+            transition: right .3s;
         }
     }
     &__button:checked + &__label::before {
-        left: 1.4rem;
+        right: 0;
     }
 }
 
